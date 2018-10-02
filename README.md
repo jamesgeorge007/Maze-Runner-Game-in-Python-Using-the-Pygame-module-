@@ -35,7 +35,7 @@ This is basically an interactive maze runner game built using the Pygame module 
 
 ![Game Over](https://github.com/jamesgeorge007/Maze-Runner/blob/master/assets/Screenshots/gameover.PNG)
 
-
+![Game Play GIF](https://github.com/jamesgeorge007/Maze-Runner/blob/master/assets/Screenshots/gameplayvideo.GIF)
 
 
 
