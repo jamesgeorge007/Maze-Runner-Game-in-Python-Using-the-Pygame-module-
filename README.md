@@ -2,6 +2,8 @@
 
 <h1 align="center"> Maze-Runner </h1>
 
+![](maze-runner.gif)
+
 ## Basic Info 
 
 This is basically an interactive maze runner game built using the Pygame module available in the python programming language which is an open source library used to build 2-D games. What I tried is to clone the T-Rex game available offline in the Google Chrome web browser. 
