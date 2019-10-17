@@ -205,24 +205,27 @@ while not user_click:
 
         mouse = pygame.mouse.get_pos()
 
-        # Play Now button
+        # Play button
 
         if display_width / 2 - 100 + 220 > mouse[0] > display_width / 2 - 100 and display_height / 2 - 80 + 70 > mouse[1] > display_height / 2 - 80:
 
-            pygame.draw.rect(gameDisplay, (235, 25, 15), (display_width / 2 - 100, display_height / 2 - 80, 220, 70))
-            play_now("Play Now")
+            pygame.draw.rect(gameDisplay, (235, 25, 15),
+                             (display_width / 2 - 100, display_height / 2 - 80, 220, 70))
+            play_now("Play")
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 user_click = True
         else:
-            pygame.draw.rect(gameDisplay, (0, 200, 0), (display_width / 2 - 100, display_height / 2 - 80, 220, 70))
-            play_now("Play Now")
+            pygame.draw.rect(gameDisplay, (0, 200, 0), (display_width /
+                                                        2 - 100, display_height / 2 - 80, 220, 70))
+            play_now("Play")
 
         # Quit button
 
         if display_width / 2 - 100 + 220 > mouse[0] > display_width / 2 - 100 and display_height / 2 + 60 + 70 > mouse[1] > display_height / 2 + 60:
 
-            pygame.draw.rect(gameDisplay, (0, 200, 0), (display_width / 2 - 100, display_height / 2 + 60, 220, 70))
+            pygame.draw.rect(gameDisplay, (0, 200, 0), (display_width /
+                                                        2 - 100, display_height / 2 + 60, 220, 70))
             quit_text("Quit")
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pygame.quit()
@@ -230,7 +233,8 @@ while not user_click:
 
         else:
 
-            pygame.draw.rect(gameDisplay, (235, 25, 15), (display_width / 2 - 100, display_height / 2 + 60, 220, 70))
+            pygame.draw.rect(gameDisplay, (235, 25, 15),
+                             (display_width / 2 - 100, display_height / 2 + 60, 220, 70))
             quit_text("Quit")
 
         i += 2
@@ -352,9 +356,9 @@ while not gameExit:
     else:
         img2(x, y)
 
-    # Green colour beneath the horizontal line
+    # Ground colour
 
-    pygame.draw.rect(gameDisplay, [0, 255, 0], [0, 481, 800, 200])
+    pygame.draw.rect(gameDisplay, [191, 170, 170], [0, 481, 800, 200])
 
     # Blue-ish tone!
 
